@@ -1,0 +1,46 @@
+html{
+  height: 100%;
+}
+body{
+  display:grid;
+  grid-template:
+  "nav       nav" 40px
+  "groups    messages"
+  "add_group new_message" 100px
+  /300px;
+  min-height:100%;
+}
+nav{
+  grid-area:nav;
+}
+chat-group{
+  display:block;
+}
+group-list{
+  display:block;
+}
+messages-view{
+  display: block;
+}
+chat-message{
+  display: block;
+  background-color: #00b7ff;
+  margin:15px;
+  padding:5px;
+  border-radius: 5px;
+  color: white;
+  font-family: "Helvetica","Arial",sans-serif;
+}
+chat-message.sender{
+  background-color: grey;
+}
+add-group{
+  display: block;
+}
+new-message{
+  display: grid;
+  grid-template:
+  "text_box  send_button"
+  /auto          100px;
+
+}
